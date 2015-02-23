@@ -13,6 +13,7 @@
 		3DFEE7141A9B2ED000ED1D36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFEE7131A9B2ED000ED1D36 /* Images.xcassets */; };
 		3DFEE7171A9B2ED000ED1D36 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DFEE7151A9B2ED000ED1D36 /* LaunchScreen.xib */; };
 		3DFEE7231A9B2ED000ED1D36 /* MusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFEE7221A9B2ED000ED1D36 /* MusicPlayerTests.swift */; };
+		3DFEE7311A9B437800ED1D36 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFEE7301A9B437800ED1D36 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3DFEE71C1A9B2ED000ED1D36 /* MusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFEE7211A9B2ED000ED1D36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DFEE7221A9B2ED000ED1D36 /* MusicPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerTests.swift; sourceTree = "<group>"; };
+		3DFEE7301A9B437800ED1D36 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Model/Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,9 @@
 		3DFEE7091A9B2ED000ED1D36 /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				3DFEE70C1A9B2ED000ED1D36 /* AppDelegate.swift */,
-				3DFEE70E1A9B2ED000ED1D36 /* ViewController.swift */,
-				3DFEE7101A9B2ED000ED1D36 /* Main.storyboard */,
-				3DFEE7131A9B2ED000ED1D36 /* Images.xcassets */,
-				3DFEE7151A9B2ED000ED1D36 /* LaunchScreen.xib */,
+				3DFEE72F1A9B435500ED1D36 /* Controllers */,
+				3DFEE72E1A9B434D00ED1D36 /* View */,
+				3DFEE72C1A9B433B00ED1D36 /* Model */,
 				3DFEE70A1A9B2ED000ED1D36 /* Supporting Files */,
 			);
 			path = MusicPlayer;
@@ -90,6 +90,9 @@
 		3DFEE70A1A9B2ED000ED1D36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DFEE7151A9B2ED000ED1D36 /* LaunchScreen.xib */,
+				3DFEE7131A9B2ED000ED1D36 /* Images.xcassets */,
+				3DFEE70C1A9B2ED000ED1D36 /* AppDelegate.swift */,
 				3DFEE70B1A9B2ED000ED1D36 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +113,30 @@
 				3DFEE7211A9B2ED000ED1D36 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DFEE72C1A9B433B00ED1D36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DFEE7301A9B437800ED1D36 /* Player.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3DFEE72E1A9B434D00ED1D36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DFEE7101A9B2ED000ED1D36 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3DFEE72F1A9B435500ED1D36 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DFEE70E1A9B2ED000ED1D36 /* ViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DFEE70F1A9B2ED000ED1D36 /* ViewController.swift in Sources */,
+				3DFEE7311A9B437800ED1D36 /* Player.swift in Sources */,
 				3DFEE70D1A9B2ED000ED1D36 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
